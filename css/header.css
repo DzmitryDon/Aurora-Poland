@@ -1,0 +1,160 @@
+.header-content {
+  padding: 30px 20px;
+  display: flex;
+  border-bottom: 1px solid #d7d7d7;
+  position: relative;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: auto;
+}
+
+.search-input {
+  font-size: 13px;
+  border: none;
+  border-bottom: 1px solid #000;
+  font-family: Lato, sans-serif;
+}
+
+.search-btn {
+  padding: 0;
+  background-image: url(../image/search.png);
+}
+
+.basket-txt {
+  font-weight: 700;
+  font-size: 13px;
+  vertical-align: top;
+  margin-left: 5px;
+  transition: color 0.3s ease-in;
+}
+.basket-txt:hover {
+  color: #f2dbe0;
+}
+
+.header-basket {
+  position: relative;
+}
+
+.basket-counter {
+  width: 20px;
+  height: 20px;
+  background-color: #f2dbe0;
+  border-radius: 50%;
+  font-weight: 900;
+  color: #fff;
+  font-size: 11px;
+  position: absolute;
+  line-height: 20px;
+}
+
+.search-active {
+  display: block;
+}
+
+@media (min-width: 320px) {
+  .search-input {
+    display: none;
+    padding: 10px 5px 5px;
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .search-input {
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0 25px 10px 10px;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .basket-counter {
+    right: 70%;
+    bottom: -25%;
+  }
+}
+
+@media (min-width: 320px) {
+  .basket-counter {
+    bottom: -20%;
+    right: -5px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .basket-txt {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 320px) {
+  .basket-txt {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .search-btn {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 2px;
+    right: 0;
+  }
+}
+
+@media (min-width: 320px) {
+  .header-basket {
+    margin: 0 20px;
+  }
+}
+
+@media (min-width: 320px) {
+  .search-btn--mobile {
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .search-btn--mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-content {
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1280px) {
+  .header-content {
+    padding: 30px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-contact {
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-search {
+    position: relative;
+    margin: 0 auto;
+    width: 460px;
+  }
+}

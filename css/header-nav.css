@@ -1,0 +1,126 @@
+@media (min-width: 320px) {
+  .header-nav {
+    position: relative;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-nav {
+    position: static;
+  }
+}
+
+@media (min-width: 320px) {
+  .nav-hamburger {
+    height: 25px;
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-hamburger {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) {
+  .hamburger-line {
+    height: 3px;
+    width: 100%;
+    background-color: #000;
+    margin: 3px 0;
+    transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+  }
+}
+
+@media (min-width: 1024px) {
+  .header-nav {
+    max-width: 1240px;
+    width: 100%;
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 320px) {
+  .nav-menu {
+    width: 200px;
+    text-align: right;
+    padding: 20px 30px;
+    border: 1px solid #d7d7d7;
+    position: absolute;
+    top: 150%;
+    right: -20px;
+    opacity: 0;
+    background-color: #fff;
+    transition: opacity 0.3s ease-in-out;
+    z-index: -1;
+    box-shadow: 0 0 15px -1px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-menu {
+    text-align: left;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    position: static;
+    opacity: 1;
+    transition: none;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: 320px) {
+  .menu-item {
+    margin: 20px 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .menu-item {
+    margin: 0;
+  }
+}
+
+.menu-link {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: border-bottom 0.3s ease-in;
+  border-bottom: 1px solid #fff;
+}
+
+.menu-link:hover {
+  border-color: #000;
+}
+
+.menu-link--sale {
+  color: #f2dbe0;
+}
+
+.menu-link--sale:hover {
+  border-color: #f2dbe0;
+}
+
+.menu-active {
+  opacity: 1;
+  z-index: 99;
+}
+
+.hamburger-active .hamburger-line:first-child {
+  transform: rotate(45deg) translate(4px, 8px);
+}
+
+.hamburger-active .hamburger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-active .hamburger-line:last-child {
+  transform: rotate(-45deg) translate(3px, -8px);
+}
